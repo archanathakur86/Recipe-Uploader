@@ -1,0 +1,81 @@
+/* Add Recipe — visually rich, modern design */
+:root{
+  --accent:#ff6b35;
+  --accent-2:#ff3b7a;
+  --muted:#64748b;
+  --card-bg: rgba(255,255,255,0.06);
+  --glass: rgba(255,255,255,0.08);
+  --glass-border: rgba(255,255,255,0.12);
+  --radius:16px;
+}
+
+.add-recipe-root{ padding:48px; max-width:1100px; margin:0 auto; font-family:Inter, system-ui, Arial; }
+.add-recipe-root h2{ font-size:30px; margin-bottom:14px; color:#0f172a; }
+
+.add-recipe-form{
+  display:grid;
+  gap:20px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.90));
+  border-radius:18px;
+  padding:20px;
+  box-shadow: 0 18px 50px rgba(2,6,23,0.08);
+}
+
+@media(min-width:900px){
+  .add-recipe-form{ grid-template-columns: 1fr 380px; align-items:start; }
+}
+
+/* Left column fields style */
+.add-recipe-form label{ display:block; }
+.add-recipe-form .label{ font-weight:700; color:#0f172a; margin-bottom:8px; }
+.add-recipe-form input[type='text'], .add-recipe-form input[type='number'], .add-recipe-form textarea{
+  width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(15,23,42,0.06);
+  background: #fff; box-sizing:border-box; font-size:15px; color:#0b1724;
+}
+.add-recipe-form textarea{ min-height:140px; resize:vertical; }
+
+/* Upload area -> large card with dashed inner box */
+.upload-box{
+  border-radius:12px; padding:14px; background:linear-gradient(180deg,#fff,#fff); box-shadow: inset 0 2px 10px rgba(0,0,0,0.03);
+  border: 1px solid rgba(15,23,42,0.04);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; min-height:180px;
+}
+.upload-area{
+  width:100%; height:140px; border-radius:10px; border:2px dashed rgba(15,23,42,0.08); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:8px; cursor:pointer; background:linear-gradient(180deg, rgba(246,248,250,0.6), rgba(255,255,255,0.6));
+}
+.upload-area:hover{ border-color: rgba(255,107,53,0.6); box-shadow: 0 8px 30px rgba(255,107,53,0.06); }
+.upload-area input[type=file]{ display:none; }
+.upload-hint{ color:var(--muted); font-size:14px; }
+
+.upload-preview{ width:100%; border-radius:10px; overflow:hidden; }
+.upload-preview img{ width:100%; height:160px; object-fit:cover; display:block; }
+
+/* Right column card visual */
+.right-column{ display:flex; flex-direction:column; gap:12px; }
+.preview-card{ background:linear-gradient(180deg, var(--card-bg), rgba(255,255,255,0.8)); border-radius:12px; padding:12px; border:1px solid rgba(15,23,42,0.04); }
+.preview-title{ font-weight:700; color:#111827; }
+.preview-meta{ color:var(--muted); font-size:13px; margin-top:6px; }
+
+/* ingredients list visual chips */
+.ingredients-chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+.chip{ background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(250,250,250,0.9)); border-radius:999px; padding:8px 12px; font-weight:600; color:#0f172a; box-shadow: 0 8px 20px rgba(2,6,23,0.04); }
+
+/* calories small input */
+.small{ max-width:220px; }
+
+/* Actions - animated gradient CTA */
+.actions{ grid-column:1/-1; display:flex; gap:12px; justify-content:flex-end; align-items:center; margin-top:6px; }
+.btn-primary{ background: linear-gradient(90deg, var(--accent), var(--accent-2)); color:#fff; padding:12px 18px; border-radius:12px; border:0; font-weight:800; cursor:pointer; box-shadow: 0 12px 32px rgba(255,107,53,0.16); transform: translateZ(0); transition: transform .18s ease; }
+.btn-primary:hover{ transform: translateY(-4px); }
+.btn-cancel{ background:transparent; border:1px solid rgba(15,23,42,0.06); padding:10px 14px; border-radius:10px; cursor:pointer; }
+
+/* subtle micro interactions */
+.icon-small{ width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,250,0.9)); box-shadow:0 8px 18px rgba(2,6,23,0.04); }
+
+/* responsive tweaks */
+@media(max-width:899px){
+  .add-recipe-form{ grid-template-columns:1fr; }
+  .actions{ justify-content:stretch; flex-direction:column-reverse; }
+  .btn-primary{ width:100%; }
+}
+

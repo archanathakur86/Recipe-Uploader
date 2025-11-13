@@ -1,0 +1,130 @@
+:root{
+  --accent: #ff7a2d;
+  --muted: #6b7280;
+  --card-bg: #fff;
+  --container-width: 1100px;
+}
+
+.nud-root { font-family: Inter, system-ui, Arial, sans-serif; color:#0f172a; }
+
+/* Topbar */
+.nud-topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 24px;
+  background:#fff;
+  border-bottom:1px solid #eef2f7;
+}
+.nud-brand{ font-weight:900; font-size:22px; margin-right:18px; display:flex; align-items:center; gap:10px; letter-spacing:0.8px; line-height:1.1; }
+.nud-nav a{ margin-right:18px; color:#111827; text-decoration:none; font-weight:800; font-size:16px; padding:6px 8px; border-radius:8px; letter-spacing:0.6px; }
+.nud-nav a.active{ color:var(--accent); background:rgba(255,122,45,0.06); }
+.icon-circle{ display:inline-flex; align-items:center; justify-content:center; width:20px; height:20px; border-radius:999px; background:rgba(255,122,45,0.12); color:var(--accent); font-weight:800; margin-right:6px; }
+.nud-center{ position:absolute; left:50%; transform:translateX(-50%); }
+.nud-nav a.active{ color:var(--accent); }
+.nud-right{ display:flex; align-items:center; gap:12px; }
+.nud-user{ font-weight:700; color:#0f172a; background:transparent; border:0; cursor:pointer; font-size:15px; padding:6px 10px; border-radius:8px; }
+.nud-user{ position:relative; padding-right:12px; }
+.nud-avatar{ width:28px; height:28px; border-radius:999px; object-fit:cover; margin-right:8px; vertical-align:middle; border:2px solid rgba(15,23,42,0.04); }
+.nud-caret{ margin-left:8px; display:inline-block; transition: transform 200ms ease, opacity 200ms ease; opacity:0.9; }
+.nud-user:hover{ background:rgba(15,23,42,0.04); transform:none; }
+.nud-user.open .nud-caret{ transform:rotate(-180deg) translateY(1px); }
+.nud-user-wrap{ position:relative; }
+.nud-user-menu{ position:absolute; right:0; top:36px; background:#fff; border-radius:8px; box-shadow:0 12px 34px rgba(2,6,23,0.08); padding:8px; display:none; flex-direction:column; min-width:160px; z-index:40; }
+.nud-user-menu.open{ display:flex; }
+.nud-user-menu a{ padding:8px 12px; text-decoration:none; color:#0f172a; font-weight:600; border-radius:6px; }
+.nud-user-menu a:hover{ background:#f8fafc; }
+.nud-logout{ background:transparent; border:1px solid rgba(15,23,42,0.06); padding:8px 10px; border-radius:8px; cursor:pointer; }
+
+/* Blink / pulse animation for logout affordance */
+.keyline-strong{ box-shadow: 0 10px 30px rgba(255,122,45,0.06); }
+@keyframes blink-pulse-strong {
+  0% { box-shadow: 0 0 0 0 rgba(255,122,45,0); transform: translateY(0) scale(1); }
+  30% { box-shadow: 0 10px 34px 6px rgba(255,122,45,0.12); transform: translateY(-2px) scale(1.02); }
+  60% { box-shadow: 0 18px 48px 10px rgba(255,122,45,0.16); transform: translateY(-3px) scale(1.03); }
+  100% { box-shadow: 0 0 0 0 rgba(255,122,45,0); transform: translateY(0) scale(1); }
+}
+@keyframes blink-once-strong {
+  from { transform: translateY(0) scale(1); box-shadow:0 0 0 0 rgba(255,122,45,0);} 
+  50%{ transform: translateY(-3px) scale(1.04); box-shadow:0 22px 60px 12px rgba(255,122,45,0.18);} 
+  to{ transform: translateY(0) scale(1); box-shadow:0 0 0 0 rgba(255,122,45,0);} 
+}
+.nud-logout{ transition: transform 160ms ease, box-shadow 220ms ease; }
+.nud-logout:hover, .nud-logout:focus{ animation: blink-pulse-strong 1.4s ease-in-out infinite; outline: none; }
+.nud-logout:active{ animation: blink-once-strong 420ms ease-in-out; }
+
+/* Hero banner */
+.nud-hero{
+  /* photographic background from project assets with darker overlay for legibility */
+  background-image: linear-gradient(rgba(2,6,23,0.5), rgba(2,6,23,0.35)), url('../assets/kitchen.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding:120px 0; /* tall hero */
+  min-height:320px;
+  color:#ffffff;
+}
+.nud-hero-inner{ max-width:var(--container-width); margin:0 auto; padding:0 20px; }
+.nud-hero h1{ margin:0; font-size:36px; font-weight:800; color:#fff; }
+.nud-hero-sub{ margin-top:10px; color: rgba(255,255,255,0.92); font-size:16px; font-weight:600; opacity:0.95 }
+
+/* Stats */
+.container{ max-width:var(--container-width); margin:0 auto; padding:28px 20px; }
+.nud-stats{ display:flex; gap:18px; margin-top:-30px; }
+.stat-card{
+  background:var(--card-bg);
+  padding:18px;
+  border-radius:10px;
+  flex:1;
+  text-align:center;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+}
+.stat-num{ font-size:28px; font-weight:800; color:var(--accent); }
+.stat-label{ margin-top:6px; color:var(--muted); font-size:13px; }
+
+/* Empty state */
+.nud-empty{ display:flex; align-items:center; justify-content:center; padding:80px 20px 120px; }
+.nud-empty-card{
+  width:100%;
+  max-width:720px;
+  background:#fff;
+  border-radius:12px;
+  padding:36px;
+  text-align:center;
+  box-shadow: 0 18px 48px rgba(16,24,40,0.08);
+  border: 1px solid rgba(16,24,40,0.04);
+}
+
+/* in-dashboard profile modal */
+.nud-profile-modal { position:fixed; left:0; right:0; top:0; bottom:0; background:rgba(2,6,23,0.4); display:flex; align-items:center; justify-content:center; z-index:60; }
+.nud-profile-content { width:92%; max-width:1000px; background:#fff; border-radius:10px; padding:16px; position:relative; }
+.nud-profile-close { position:absolute; right:12px; top:12px; background:transparent; border:0; font-size:20px; cursor:pointer; }
+.nud-empty-card h2{ margin:0 0 8px 0; font-size:22px; }
+.nud-empty-card p{ margin:0 0 20px 0; color:var(--muted); }
+.nud-actions{ display:flex; gap:12px; justify-content:center; margin-top:12px; }
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:10px;
+  border:none;
+  font-weight:700;
+  cursor:pointer;
+}
+.btn-secondary{
+  background:transparent;
+  color:var(--accent);
+  padding:10px 16px;
+  border-radius:10px;
+  border:1px solid rgba(255,122,45,0.12);
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+}
+
+/* Responsive */
+@media (max-width:900px){
+  .nud-stats{ flex-direction:column; }
+  .nud-hero h1{ font-size:26px; }
+  .nud-topbar{ padding:12px 14px; }
+  .nud-empty-card{ padding:22px; }
+}

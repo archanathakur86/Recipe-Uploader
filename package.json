@@ -1,0 +1,20 @@
+{
+  "name": "my-mern-app",
+  "version": "1.0.0",
+  "description": "A MERN stack application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/src/index.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon server/src/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

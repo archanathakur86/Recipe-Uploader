@@ -1,0 +1,13 @@
+/* Simple modal styles for confirmation box */
+.cm-overlay{
+  position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(2,6,23,0.45); z-index:1000;
+}
+.cm-box{
+  width:420px; max-width:92%; background:#fff; border-radius:12px; padding:18px; box-shadow:0 30px 80px rgba(2,6,23,0.28);
+}
+.cm-title{ font-weight:800; font-size:18px; color:#0f172a; }
+.cm-message{ margin-top:8px; color:#475569; }
+.cm-actions{ display:flex; justify-content:flex-end; gap:10px; margin-top:16px; }
+.cm-btn{ padding:8px 12px; border-radius:8px; border:0; cursor:pointer; font-weight:700; }
+.cm-cancel{ background:transparent; border:1px solid rgba(15,23,42,0.06); }
+.cm-confirm{ background: linear-gradient(90deg,#ff6b35,#ff3b7a); color:#fff; }

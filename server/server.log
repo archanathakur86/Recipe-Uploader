@@ -1,0 +1,2133 @@
+nohup: ignoring input
+MongoDB connected
+Server is running on port 5000
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "mine" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"mine"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'mine',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "orphans" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"orphans"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'orphans',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}
+getRecipe error: CastError: Cast to ObjectId failed for value "orphans" (type string) at path "_id" for model "Recipe"
+    at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:250:11)
+    at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+    at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+    at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+    at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+    at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+    at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+    at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getRecipe (/home/navgurukul/Recipe-upload/my-mern-app/server/src/controllers/recipeController.js:42:20) {
+  stringValue: '"orphans"',
+  messageFormat: undefined,
+  kind: 'ObjectId',
+  value: 'orphans',
+  path: '_id',
+  reason: BSONError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new ObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/bson/lib/bson.cjs:2055:23)
+      at castObjectId (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schema/objectid.js:248:12)
+      at SchemaType.applySetters (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1219:12)
+      at SchemaType.castForQuery (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/schematype.js:1633:15)
+      at cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/cast.js:389:32)
+      at Query.cast (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4927:12)
+      at Query._castConditions (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2237:10)
+      at model.Query._findOne (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:2533:8)
+      at model.Query.exec (/home/navgurukul/Recipe-upload/my-mern-app/server/node_modules/mongoose/lib/query.js:4447:28),
+  valueType: 'string',
+  model: Model { Recipe }
+}

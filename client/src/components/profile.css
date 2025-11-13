@@ -1,0 +1,82 @@
+/* Profile page styles */
+.profile-root{ font-family:Inter, system-ui, Arial; }
+.profile-header{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.profile-meta{ display:flex; gap:12px; align-items:center; }
+.avatar{ width:72px; height:72px; border-radius:999px; background:#ff7a2d; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:26px; }
+.p-name{ font-weight:800; font-size:18px; }
+.p-email{ color:#64748b; font-size:13px; }
+.avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+.profile-stats{ display:flex; gap:18px; }
+.profile-stats div{ text-align:center; background:linear-gradient(180deg,#fff,#fafafa); padding:10px 14px; border-radius:10px; box-shadow:0 10px 20px rgba(2,6,23,0.04); }
+.profile-tabs{ margin-top:18px; display:flex; gap:8px; }
+.profile-tabs button{ padding:8px 12px; border-radius:8px; border:1px solid rgba(15,23,42,0.06); background:transparent; cursor:pointer; }
+.profile-tabs button.active{ background:linear-gradient(90deg,#ff7a2d,#ff3b7a); color:#fff; border:0; }
+.profile-body{ margin-top:18px; }
+.rl-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px; }
+
+.activity-list{ display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+.activity-item{ background:#fff; border-radius:8px; padding:8px 10px; box-shadow:0 6px 18px rgba(2,6,23,0.04); font-size:14px; }
+
+/* Orphans scrollable container */
+.orphans-scroll{ max-height:420px; overflow:auto; padding-right:8px; }
+
+/* WebKit scrollbar */
+.orphans-scroll::-webkit-scrollbar{ width:10px; }
+.orphans-scroll::-webkit-scrollbar-track{ background:transparent; }
+.orphans-scroll::-webkit-scrollbar-thumb{ background:rgba(15,23,42,0.12); border-radius:10px; }
+
+/* Firefox scrollbar fallback */
+.orphans-scroll{ scrollbar-width:thin; scrollbar-color: rgba(15,23,42,0.12) transparent; }
+
+/* Manage account styles */
+.manage-root{ margin-top:12px; }
+.manage-grid{ display:grid; grid-template-columns: 1fr 360px; gap:16px; align-items:start; }
+.manage-card{ background:#fff; border-radius:10px; padding:14px; box-shadow:0 10px 30px rgba(2,6,23,0.04); }
+.manage-card-head{ font-weight:700; margin-bottom:8px; font-size:15px; }
+.account-row{ display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px dashed #f1f5f9; }
+.row-label{ color:#475569; }
+.row-value{ font-weight:600; }
+.manage-actions{ margin-top:12px; display:flex; gap:8px; }
+.manage-body .field{ margin-bottom:10px; }
+
+/* Button variants */
+.btn{ padding:8px 12px; border-radius:8px; border:0; background:#f1f5f9; cursor:pointer; }
+.btn-primary{ background:linear-gradient(90deg,#ff7a2d,#ff3b7a); color:#fff; }
+.btn-outline{ background:transparent; border:1px solid rgba(15,23,42,0.06); }
+.btn-danger{ background:#7f1d1d; color:#fff; }
+
+/* Make logout / outline buttons a bit larger and add hover */
+.manage-actions .btn{ padding:10px 14px; font-weight:700; }
+.btn-outline:hover{ background:rgba(15,23,42,0.04); transform:translateY(-1px); transition: all 160ms ease; }
+.btn-danger:hover{ filter:brightness(1.05); transform:translateY(-1px); transition: all 160ms ease; }
+
+/* Blink animation for Logout inside manage */
+.manage-actions .btn-outline:hover, .manage-actions .btn-outline:focus{ animation: blink-pulse-strong 1.4s ease-in-out infinite; outline:none; }
+.manage-actions .btn-outline:active{ animation: blink-once-strong 420ms ease-in-out; }
+
+/* Larger logout button and hover */
+.account-card .btn{ padding:10px 14px; font-weight:700; }
+.account-card .btn:hover{ transform:translateY(-2px); box-shadow:0 8px 20px rgba(15,23,42,0.08); }
+
+@media (max-width:900px){
+	.manage-grid{ grid-template-columns: 1fr; }
+}
+
+/* Followers modal */
+.followers-modal {
+	position: fixed;
+	inset: 0;
+	background: rgba(0,0,0,0.45);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	z-index: 2000;
+}
+.followers-card { background: #fff; border-radius: 8px; max-width: 480px; width: 100%; max-height: 80vh; overflow: auto; padding: 16px; }
+.followers-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+.followers-list { display:flex; flex-direction:column; gap:8px; }
+.f-item { display:flex; align-items:center; gap:12px; padding:8px; border-bottom:1px solid #eee; }
+.f-avatar { width:40px; height:40px; border-radius:50%; object-fit:cover; }
+.f-name { font-weight:600; }
+.f-email { font-size:12px; color:#666; }

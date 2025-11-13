@@ -1,0 +1,9 @@
+:root { --accent: #ff6b6b; --muted: #6b7280; --bg: #f7fafc; --card: #fff; }
+body { font-family: Inter, system-ui, Arial; margin:0; background:var(--bg); color:#111; }
+.topbar { display:flex; justify-content:space-between; padding:12px 20px; background:#fff; border-bottom:1px solid #eee; }
+.logo { font-weight:700; text-decoration:none; color:#111; }
+.app main { padding:20px; }
+.card { background:var(--card); padding:12px; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.06); margin-bottom:12px; }
+.recipe-card img { width:100%; height:180px; object-fit:cover; border-radius:6px; }
+.search input, .card input, textarea { width:100%; padding:8px; margin:6px 0; box-sizing:border-box; }
+button { background:var(--accent); color:white; border:none; padding:8px 10px; border-radius:6px; cursor:pointer; }

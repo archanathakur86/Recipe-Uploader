@@ -1,0 +1,100 @@
+/* Split two-column sign-up layout */
+.signup-split {
+  display: flex;
+  min-height: calc(100vh - 72px);
+  overflow: hidden;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+/* Left branding column */
+.signup-left {
+  flex: 1;
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('../../assets/kitchen.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 56px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.branding { max-width: 520px; }
+.logo-wrap { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.chef-hat { flex: 0 0 auto; }
+.brand-title { font-size:28px; font-weight:800; color:#fff; }
+.brand-tag { font-size:14px; color:rgba(255,255,255,0.9); margin-top:4px; }
+
+/* Features */
+.features-list {
+  margin-top:24px;
+  list-style:none;
+  padding:0;
+  display:grid;
+  gap:12px;
+  color:rgba(255,255,255,0.95);
+  font-size:15px;
+}
+.features-list .dot { display:inline-block; width:26px; text-align:center; margin-right:10px; font-size:16px; }
+
+/* Right sign-up column */
+.signup-right {
+  width:460px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:56px 28px;
+  background: linear-gradient(180deg, #fafafa, #fff);
+}
+
+.signup-card {
+  width:100%;
+  background:#fff;
+  border-radius:12px;
+  padding:28px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+  border: 1px solid rgba(16,24,40,0.04);
+}
+
+.signup-card h2 { margin:0 0 6px 0; font-size:22px; color:#0f172a; }
+.sub { margin:0 0 18px 0; color:#475569; font-size:14px; }
+
+.signup-form .field { display:block; margin-bottom:14px; }
+.label-text { display:block; font-size:13px; margin-bottom:6px; color:#334155; }
+.signup-form input {
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid rgba(15,23,42,0.08);
+  background:#fff;
+  box-sizing:border-box;
+  font-size:14px;
+  color:#0f172a;
+}
+
+.signup-btn {
+  width:100%;
+  margin-top:6px;
+  background:#ff7a2d;
+  color:#fff;
+  border:none;
+  padding:12px 14px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+  font-size:16px;
+  box-shadow: 0 8px 20px rgba(255,122,45,0.12);
+}
+
+.signup-btn:disabled { opacity:0.7; cursor:default; }
+
+.signin-link { margin-top:12px; font-size:13px; color:#475569; text-align:center; }
+.signin-link a { color:#ff7a2d; text-decoration:none; font-weight:700; }
+
+@media (max-width:980px) {
+  .signup-left { display:none; }
+  .signup-right { width:100%; padding:32px; min-height:100vh; }
+  .signup-card { margin-top:60px; }
+}
+
+.icon-circle{ display:inline-block; width:20px; height:20px; border-radius:50%; background:#ff7a2d; color:#fff; text-align:center; line-height:20px; font-weight:800; margin-right:8px; }
