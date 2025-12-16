@@ -12,7 +12,9 @@
   "scripts": {
     "start": "serve -s build || react-scripts start",
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "depcheck": "depcheck --skip-missing --ignore-dirs=dist,build,coverage,public --json",
+    "depcheck:report": "depcheck --skip-missing --ignore-dirs=dist,build,coverage,public --json > depcheck-report.json"
   },
   "eslintConfig": {
     "extends": [
@@ -30,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "depcheck": "^1.4.5"
   }
 }

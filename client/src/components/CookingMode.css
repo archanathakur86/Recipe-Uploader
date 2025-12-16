@@ -1,0 +1,382 @@
+/* Cooking Mode - Full Screen View */
+.cooking-mode-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Header */
+.cooking-mode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.exit-btn {
+  width: 50px;
+  height: 50px;
+  background: rgba(239, 68, 68, 0.2);
+  border: 2px solid rgba(239, 68, 68, 0.5);
+  border-radius: 12px;
+  color: #EF4444;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exit-btn:hover {
+  background: #EF4444;
+  color: white;
+  transform: scale(1.05);
+}
+
+.recipe-title-cooking {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.voice-indicator {
+  width: 200px;
+  text-align: right;
+}
+
+.listening-pulse {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+/* Progress Bar */
+.progress-container {
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #E85D04 0%, #F48C06 100%);
+  border-radius: 6px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 20px rgba(232, 93, 4, 0.5);
+}
+
+.step-counter {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+}
+
+/* Main Instruction Display */
+.instruction-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 80px;
+  text-align: center;
+  animation: fadeInScale 0.5s ease;
+  gap: 40px;
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Large Orange Circle with Step Number */
+.instruction-number-circle {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #E85D04 0%, #F48C06 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+  box-shadow: 0 10px 40px rgba(232, 93, 4, 0.6);
+  font-family: 'Inter', sans-serif;
+  animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Instruction Text - Large and Readable */
+.instruction-text {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 1200px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Transcript Display */
+.transcript-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(59, 130, 246, 0.2);
+  border: 2px solid rgba(59, 130, 246, 0.5);
+  padding: 20px 30px;
+  border-radius: 16px;
+  font-size: 24px;
+  color: #60A5FA;
+  backdrop-filter: blur(10px);
+  animation: slideInDown 0.3s ease;
+  z-index: 10;
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Navigation Controls */
+.cooking-mode-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 40px;
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn {
+  padding: 20px 50px;
+  font-size: 22px;
+  font-weight: 700;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+}
+
+.nav-btn:hover:not(:disabled) {
+  background: rgba(232, 93, 4, 0.8);
+  border-color: #E85D04;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(232, 93, 4, 0.4);
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.voice-btn {
+  padding: 20px 40px;
+  font-size: 22px;
+  font-weight: 700;
+  border: 2px solid rgba(16, 185, 129, 0.5);
+  border-radius: 16px;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.voice-btn:hover {
+  background: rgba(16, 185, 129, 0.2);
+  transform: scale(1.05);
+}
+
+.voice-btn.active {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: white;
+  animation: pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+}
+
+/* Voice Commands Help */
+.voice-commands-help {
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.voice-commands-help p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+/* Completion Badge */
+.completion-badge {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  padding: 20px 30px;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.5);
+  animation: bounceIn 0.8s ease;
+}
+
+@keyframes bounceIn {
+  0% { opacity: 0; transform: translateY(-50%) scale(0.3); }
+  50% { transform: translateY(-50%) scale(1.05); }
+  100% { opacity: 1; transform: translateY(-50%) scale(1); }
+}
+
+/* Loading State */
+.cooking-mode-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #E85D04;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .instruction-text {
+    font-size: 36px;
+  }
+  
+  .instruction-number-circle {
+    width: 90px;
+    height: 90px;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cooking-mode-header {
+    padding: 15px 20px;
+  }
+  
+  .recipe-title-cooking {
+    font-size: 20px;
+  }
+  
+  .instruction-text {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+  
+  .instruction-number-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+  }
+  
+  .instruction-container {
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  .cooking-mode-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-btn,
+  .voice-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+  
+  .voice-commands-help {
+    font-size: 11px;
+  }
+}

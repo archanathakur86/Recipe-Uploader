@@ -17,7 +17,6 @@ export default function Profile({ user, defaultTab, defaultEdit }) {
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [myRecipes, setMyRecipes] = useState([]);
   const [favorites, setFavorites] = useState([]);
-  const [orphans, setOrphans] = useState([]);
   const [followersList, setFollowersList] = useState([]);
   const [showFollowers, setShowFollowers] = useState(false);
 
@@ -58,15 +57,6 @@ export default function Profile({ user, defaultTab, defaultEdit }) {
         const mine = await api.get('/recipes/mine');
         setMyRecipes(mine.data || []);
 
-        // refresh orphans when viewing profile (but only when needed)
-        try {
-          const or = await api.get('/recipes/orphans');
-          setOrphans(or.data || []);
-        } catch (e) {
-          // ignore: orphans endpoint may be restricted or empty
-          console.warn('Failed loading orphans', e?.response?.data || e.message || e);
-        }
-
         // load favorite recipes (user.favorites is array of ids)
         const favIds = (me.favorites || []).map(f => f.toString());
         const favs = [];
@@ -89,29 +79,12 @@ export default function Profile({ user, defaultTab, defaultEdit }) {
     if (defaultTab) setTab(defaultTab === 'manage' ? 'manage' : defaultTab);
   }, [defaultTab]);
 
-  const claimOrphan = async (id) => {
-    try {
-      await api.post(`/recipes/${id}/claim`);
-      // refresh lists
-      const mine = await api.get('/recipes/mine');
-      setMyRecipes(mine.data || []);
-      const or = await api.get('/recipes/orphans');
-      setOrphans(or.data || []);
-    } catch (err) {
-      console.error('Claim failed', err);
-      alert(err.response?.data?.message || 'Failed to claim recipe');
-    }
-  };
-
   const deleteRecipe = async (id) => {
     if (!window.confirm('Delete this recipe? This cannot be undone.')) return;
     try {
       await api.delete(`/recipes/${id}`);
       const mine = await api.get('/recipes/mine');
       setMyRecipes(mine.data || []);
-      // also refresh favorites/orphans
-      const or = await api.get('/recipes/orphans');
-      setOrphans(or.data || []);
     } catch (err) {
       console.error('Delete failed', err);
       alert(err.response?.data?.message || 'Failed to delete recipe');
@@ -150,8 +123,7 @@ export default function Profile({ user, defaultTab, defaultEdit }) {
         <button className={tab==='overview' ? 'active' : ''} onClick={() => setTab('overview')}>Overview</button>
         <button className={tab==='my' ? 'active' : ''} onClick={() => setTab('my')}>My Recipes</button>
         <button className={tab==='fav' ? 'active' : ''} onClick={() => setTab('fav')}>Favorites</button>
-  <button className={tab==='settings' ? 'active' : ''} onClick={() => setTab('settings')}>Settings</button>
-  <button className={tab==='orphans' ? 'active' : ''} onClick={() => setTab('orphans')}>Orphans</button>
+        <button className={tab==='settings' ? 'active' : ''} onClick={() => setTab('settings')}>Settings</button>
       </div>
 
       <div className="profile-body">
@@ -358,33 +330,6 @@ export default function Profile({ user, defaultTab, defaultEdit }) {
                 ))}
               </div>
             </div>
-          </div>
-        )}
-
-        {tab === 'orphans' && (
-          <div>
-            <h3>Orphan recipes (created while unauthenticated)</h3>
-            {orphans.length === 0 ? (
-              <div>No orphan recipes found.</div>
-            ) : (
-              <div className="orphans-scroll">
-                <div className="rl-grid">
-                  {orphans.map(r => (
-                    <div key={r._id} className="rl-card">
-                      <div className="rl-image" style={{ backgroundImage: `url(${r.imageUrl ? (r.imageUrl.startsWith('http') ? r.imageUrl : (process.env.REACT_APP_API_URL?.replace('/api','') || '') + r.imageUrl) : '/assets/carbonara.jpg'})` }} />
-                      <div className="rl-body">
-                        <h3 className="rl-title">{r.title}</h3>
-                        <p className="rl-desc">{r.summary || ((r.ingredients||[]).slice(0,4).map(i=>i.name).join(', '))}</p>
-                      </div>
-                      <div className="rl-footer" style={{ display:'flex', gap:8, alignItems:'center' }}>
-                        <button className="btn" onClick={() => claimOrphan(r._id)}>Claim</button>
-                        <span style={{ marginLeft: 'auto' }}>{new Date(r.createdAt).toLocaleDateString()}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
         )}
       </div>

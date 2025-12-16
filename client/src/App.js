@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import RecipeView from './components/RecipeView';
@@ -15,6 +15,8 @@ import './styles/main.css';
 import ProfileDrawer from './components/ProfileDrawer';
 import api from './services/api';
 import { useCallback } from 'react';
+import RecipeDetail from './components/RecipeDetail';
+import CookingMode from './components/CookingMode';
 
 export default function App() {
   const [user, setUser] = useState(() => {
@@ -22,7 +24,6 @@ export default function App() {
     return raw ? JSON.parse(raw) : null;
   });
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
     if (user) localStorage.setItem('user', JSON.stringify(user));
@@ -37,12 +38,6 @@ export default function App() {
     window.addEventListener('userUpdated', onUserUpdated);
     return () => window.removeEventListener('userUpdated', onUserUpdated);
   }, []);
-
-  const logout = () => {
-    setUser(null);
-    localStorage.removeItem('token');
-    navigate('/signin');
-  };
 
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [drawerProfile, setDrawerProfile] = useState(null);
@@ -83,7 +78,8 @@ export default function App() {
           />
           <Route path="/signin" element={<SignIn onAuth={setUser} />} />
           <Route path="/signup" element={<SignUp onAuth={setUser} />} />
-          <Route path="/recipe/:id" element={<RecipeView user={user} />} />
+          <Route path="/recipe/:id" element={<RecipeDetail />} />
+          <Route path="/recipe/:id/cooking" element={<CookingMode />} />
           <Route path="/recipes" element={<MyRecipes />} />
           <Route path="/feed" element={<PublicFeed />} />
           <Route path="/add" element={<AddRecipe user={user} />} />

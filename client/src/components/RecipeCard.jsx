@@ -68,7 +68,6 @@ export default function RecipeCard({ recipe, onChange, onDelete, onOpen }) {
   const base = process.env.REACT_APP_API_URL?.replace('/api','') || 'http://localhost:5000';
 
   const [liked, setLiked] = useState(false);
-  const [likes, setLikes] = useState(recipe.likes || 0);
 
   useEffect(() => {
     try {
@@ -98,7 +97,6 @@ export default function RecipeCard({ recipe, onChange, onDelete, onOpen }) {
     try {
       const next = !liked;
       setLiked(next);
-      setLikes(l => next ? l + 1 : Math.max(0, l - 1));
 
       const res = await api.post(`/recipes/${recipe._id}/favorite`);
       try {
@@ -120,7 +118,6 @@ export default function RecipeCard({ recipe, onChange, onDelete, onOpen }) {
     } catch (err) {
       console.error('favorite failed', err);
       setLiked(prev => !prev);
-      setLikes(l => Math.max(0, l + (liked ? 1 : -1)));
       if (err.response && err.response.status === 401) alert('Please sign in to favorite recipes');
     }
   };

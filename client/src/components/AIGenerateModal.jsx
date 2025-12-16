@@ -14,8 +14,8 @@ function localGenerate(ingList) {
   const raw = tokenize(ingList);
   if (!raw.length) return null;
   const set = new Set(raw);
-  const has = (w) => set.has(w);
-  const hasAny = (...w) => w.some(set.has, set);
+  const hasGroup = (g) => GROUPS[g].some(set.has, set);
+  const firstOf = (g) => GROUPS[g].find(set.has, set);
 
   // Groups/synonyms
   const GROUPS = {
@@ -38,8 +38,6 @@ function localGenerate(ingList) {
     CAPSICUM: ['capsicum','bell pepper','pepper'],
     CHICKEN: ['chicken']
   };
-  const hasGroup = (g) => GROUPS[g].some(set.has, set);
-  const firstOf = (g) => GROUPS[g].find(set.has, set);
 
   let title = 'Chef’s Quick Creation';
   let cuisine = 'Fusion';
