@@ -1,4 +1,4 @@
-# 🍳 HomePlate - AI-Powered Recipe Management Platform
+# HomePlate - AI-Powered Recipe Management Platform
 
 > Transform your cooking experience with intelligent recipe management, AI-powered meal planning, and comprehensive nutrition tracking.
 
