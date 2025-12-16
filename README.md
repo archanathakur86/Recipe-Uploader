@@ -4,7 +4,7 @@
 
 ##  Features
 
-### 🤖 AI Recipe Generation
+###  AI Recipe Generation
 - Generate recipes from available ingredients in seconds
 - Smart ingredient substitution suggestions
 - Dietary restriction compatibility (Vegan, Keto, Gluten-Free)
