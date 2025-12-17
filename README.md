@@ -209,7 +209,6 @@ Contributions are welcome! Please follow these steps:
 
 For questions or support:
 - Email: archanathakurs246@gmail.com
-- GitHub: [@yourusername](https://github.com/archanathakur86)
 
 ## Learning Outcomes
 
